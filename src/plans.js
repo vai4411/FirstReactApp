@@ -1,37 +1,38 @@
 import React from 'react';
+import './plans.css';
 
 function subscription() {
   return (
-    <div>
-		<div>
-			<label>Free</label>
+    <div className="plan">
+		<div className="price-tag1">
+			<label id='free-plan'>Free</label>
 			<h1>$0</h1>
 			<h4>/mo</h4>
-			<h5>10 users included</h5>
-			<h5>2GB of Storage</h5>
-			<h5>Help center access</h5>
-			<h5>Email support</h5>
+			<p>10 users included</p>
+			<p>2GB of Storage</p>
+			<p>Help center access</p>
+			<p>Email support</p>
 			<button>SIGN UP FOR FREE</button>
 		</div>
-		<div>
-		<label>Pro</label>
-		<label>Most popular</label>
+		<div className="price-tag2">
+		<label  id='pro-plan'>Pro</label>
+		<label  id='pro-plan1'>Most popular</label>
 			<h1>$15</h1>
 			<h4>/mo</h4>
-			<h6>20 users included</h6>
-			<h6>10GB of Storage</h6>
-			<h6>Help center access</h6>
-			<h6>Priority email support</h6>
+			<p>20 users included</p>
+			<p>10GB of Storage</p>
+			<p>Help center access</p>
+			<p>Priority email support</p>
 			<button>GET STARTED</button>
 		</div>
-		<div>
-			<label>Enterprise</label>
+		<div className="price-tag3">
+			<label  id='enterprise-plan'>Enterprise</label>
 			<h1>$30</h1>
 			<h4>/mo</h4>
-			<h6>50 users included</h6>
-			<h6>30GB of Storage</h6>
-			<h6>Help center access</h6>
-			<h6>Phone & email support</h6>
+			<p>50 users included</p>
+			<p>30GB of Storage</p>
+			<p>Help center access</p>
+			<p>Phone & email support</p>
 			<button>CONTACT US</button>
 		</div>
 	</div>
