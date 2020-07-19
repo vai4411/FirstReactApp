@@ -14,6 +14,7 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	border-bottom: 3px solid #EEFFFF;
 }
 
 label#free-plan {
@@ -34,11 +35,6 @@ label#pro-plan {
 	background-color: #EEEEEE;
 }
 
-label#pro-plan1 {
-	padding-left: 5.85vw;
-	padding-right: 5.85vw;
-	background-color: #EEEEEE;
-}
 
 label#enterprise-plan{
 	padding: 1.6vw;
@@ -61,7 +57,8 @@ button{
 	background-color: white;
 }
 
+
 button:hover{
-	background-color: #35B8FB;
+	background-color: #1976D2;
 	color: white;
 }
