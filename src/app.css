@@ -1,0 +1,45 @@
+.top-bar{
+	background-color: #EEEEEE;
+	margin-top: -1vw;
+	padding: none;
+	width: 100%;
+	display: flex;
+	font-family: Sans-serif;
+}
+
+h3{
+	margin-left: 2%;
+
+}
+
+label#company-name{
+	font-size: 80%;
+}
+
+h5{
+	margin-right: 3%;
+}
+
+h5#features{
+	margin-left: 53%;
+}
+
+h5:hover{
+	cursor: pointer;
+}
+
+button#login{
+	height: 2vw;
+	width: 6%;
+	margin-top: 1.2vw;
+	font-size: 70%;
+	margin-right: 3%;
+	border-style: solid;
+	color: #35B8FB;
+	border-color: #35B8FB;
+}
+
+button#login:hover{
+	background-color: #35B8FB;
+	color: white;
+}
