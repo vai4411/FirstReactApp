@@ -1,15 +1,16 @@
 import React from 'react';
+import './app.css';
 
-function App() {
+function app() {
   return (
-    <div>
-        <h3>Company name</h3>
-        <label>FATURES</label>
-        <label>ENTERPRISE</label>
-        <label>SUPPORT</label>
-        <button>LOGIN</button>
+    <div className="top-bar">
+        <h3 id='company-name'>Company name</h3>
+        <h5 id='features'>FATURES</h5>
+        <h5>ENTERPRISE</h5>
+        <h5>SUPPORT</h5>
+        <button id='login'>LOGIN</button>
     </div>
   );
 }
 
-export default App;
+export default app;
