@@ -26,7 +26,7 @@ h5#features{
 
 h5:hover{
 	cursor: pointer;
-	color: #35B8FB;
+	color: #1976D2;
 }
 
 button#login{
@@ -36,12 +36,13 @@ button#login{
 	font-size: 70%;
 	margin-right: 3%;
 	border-style: solid;
-	color: #35B8FB;
-	border-color: #35B8FB;
+	color: #1976D2;
+	border-color: #1976D2;
 	background-color: #EEEEEE;
+	border-radius: 4px;
 }
 
 button#login:hover{
-	background-color: #35B8FB;
+	background-color: #1976D2;
 	color: white;
 }

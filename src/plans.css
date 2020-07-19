@@ -57,12 +57,13 @@ h4{
 button{
 	width: 18vw;
 	border-style: solid;
-	color: #35B8FB;
-	border-color: #35B8FB;
+	color: #1976D2;
+	border-color: #1976D2;
 	background-color: white;
+	border-radius: 4px;
 }
 
 button:hover{
-	background-color: #35B8FB;
+	background-color: #1976D2;
 	color: white;
 }

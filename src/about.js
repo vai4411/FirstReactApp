@@ -1,8 +1,9 @@
 import React from 'react';
+import './about.css';
 
 function details() {
   return (
-    <div>
+    <div className="about-tab">
 		<div>
 			<h3>Company</h3>
 			<p>Team</p>
