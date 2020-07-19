@@ -38,6 +38,7 @@ button#login{
 	border-style: solid;
 	color: #35B8FB;
 	border-color: #35B8FB;
+	background-color: #EEEEEE;
 }
 
 button#login:hover{
