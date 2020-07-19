@@ -1,7 +1,7 @@
 import React from 'react';
-import './app.css';
+import './topBar.css';
 
-function app() {
+function topBar() {
   return (
     <div className="top-bar">
         <h3 id='company-name'>Company name</h3>
@@ -13,4 +13,4 @@ function app() {
   );
 }
 
-export default app;
+export default topBar;
