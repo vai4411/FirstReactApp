@@ -1,5 +1,4 @@
 import React from 'react';
-import './price.css';
 
 function price() {
   return (

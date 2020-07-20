@@ -1,0 +1,42 @@
+.app-header{
+  background-color: #EEEEEE;
+  height: 4vw;
+  margin-top: -1.8vw;
+  position: absolute;
+}
+
+p#topbar-company-name{
+  font-size: 2vw;
+  padding: 1vw;
+}
+
+.topbar-options{
+	background-color: #EEEEEE;
+	margin-top: -6vw;
+	padding: none;
+	width: 35%;
+	display: flex;
+	font-family: Sans-serif;
+	margin-left: 60vw;
+	justify-content: space-between;
+}
+
+.topbar-options:hover{
+  cursor: pointer;
+}
+
+button#topbar-login-button{
+  margin-top: 0.6vw;
+  color: blue;
+  width: 6vw;
+  height: 2vw;
+  background-color: #EEEEEE;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 3px;
+}
+
+button#topbar-login-button:hover{
+  color: white;
+  background-color: blue;
+}
