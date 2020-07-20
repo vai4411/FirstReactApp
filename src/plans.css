@@ -14,7 +14,7 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	border-bottom: 3px solid #EEFFFF;
+	/* border-bottom: 3px solid #EEFFFF; */
 }
 
 label#free-plan {
@@ -26,12 +26,22 @@ label#free-plan {
 }
 
 label#pro-plan {
-	padding: 1.2vw;
+	padding: 1.36vw;
 	padding-left: 8.2vw;
 	padding-right: 8.2vw;
-	padding-bottom: 0.5vw;
+	padding-bottom: 0.01vw;
 	padding-top: -2%;
 	font-size: 1.4vw;
+	background-color: #EEEEEE;
+}
+
+label#pro-plan1 {
+	/* padding: 1.2vw; */
+	padding-left: 5.84vw;
+	padding-right: 5.84vw;
+	padding-bottom: 0.5vw;
+	padding-top: 0.005vw;
+	/* font-size: 1.4vw; */
 	background-color: #EEEEEE;
 }
 
@@ -50,11 +60,12 @@ h4{
 }
 
 button{
-	width: 18vw;
+	width: 17.5vw;
 	border-style: solid;
-	color: #35B8FB;
-	border-color: #35B8FB;
+	color: #1976D2;
+	border-color: #1976D2;
 	background-color: white;
+	border-radius: 0.3vw;
 }
 
 

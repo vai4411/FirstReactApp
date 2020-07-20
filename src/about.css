@@ -1,4 +1,5 @@
 .about-tab{
 	display: flex;
 	justify-content: space-evenly;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
