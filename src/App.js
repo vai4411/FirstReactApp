@@ -3,6 +3,7 @@ import TopBar from './components/topBar.jsx';
 import Price from './components/price.jsx';
 import Plans from './components/plans.jsx';
 import About from './components/about.jsx';
+import './App.css';
 
 class App extends Component{
 

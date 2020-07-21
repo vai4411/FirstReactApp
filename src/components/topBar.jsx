@@ -8,7 +8,7 @@ class TopBar extends React.Component {
       <div>
         {items.map((data) => {
         return(
-          <span>{data}</span>
+          <span className="topbar-sub-options">{data}</span>
         );
         })}
       </div>
