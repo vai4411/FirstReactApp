@@ -8,7 +8,7 @@ class Price extends React.Component {
       <div>
         {desc.map((data) => {
         return(
-          <p>{data}</p>
+          <p className='price-desc'>{data}</p>
         );
         })}
       </div>

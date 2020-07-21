@@ -6,17 +6,17 @@ class AboutSubMenu extends React.Component{
 
         var subHeading= this.props.aboutSubMenu.subHeading.map(data => {
             return(
-                <li>
+                <li className="about-sub-menu-list">
                     {data}
                 </li>
             );
         })
         return(
-            <div>
-                <div>
+            <div  class="about-menu">
+                <div class="about-menu-heading">
                     {this.props.aboutSubMenu.heading}
                 </div>
-                <div>
+                <div className="about-sub-menu">
                     {subHeading}
                 </div>
             </div>

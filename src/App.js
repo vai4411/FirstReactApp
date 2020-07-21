@@ -75,19 +75,26 @@ class App extends Component{
 
     return (
       <div>
-      <div className='app-header'>
-        <p id="topbar-company-name">Company Name</p>
-        <div className='topbar-options'>
-        <TopBar items={HeadersItems}/>
-        <button id='topbar-login-button'>USERS</button>
+        <div className='app-header'>
+          <p id='topbar-company-name'>CompanyName</p>
+            <div className='topbar-options'>
+            <TopBar items={HeadersItems}/>
+            <button id='topbar-login-button'>USERS</button>
+            </div>
         </div>
-      </div>
-      <div>
-        <p>Pricing</p>
-        <Price desc={PricingDesc}/>
-      </div>
+        <div className='pricing-heading'>
+          <h4 id='pricing'>Pricing</h4>
+          <div className='pricing-desc-div'>
+          <p>
+          <Price desc={PricingDesc}/></p>
+        </div>
+        </div>
+        <div>
         <Plans plan={PlanTypes}/>
+        </div>
+        <div>
         <About about={AboutInfo}/>
+        </div>
       </div>
     )
   }

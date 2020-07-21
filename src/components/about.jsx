@@ -9,13 +9,12 @@ class About extends React.Component {
                 <AboutSubMenu aboutSubMenu={menu}/>
             );
         })
-
         return(
-            <div>
-                <div>
+            <div className="about">
+                <div  className="about-options">
                     {menu}
                 </div>
-                <div>
+                <div className="about-info">
                     Copyright @ Your Website 2020.
                 </div>
             </div>
