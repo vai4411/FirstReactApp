@@ -6,6 +6,12 @@ class Users extends React.Component {
 	const {users} = this.props;
 	  return (
 		<div>
+			<td>name</td>
+			<td>email</td>
+			<td>status</td>
+			<td>role</td>
+			<td>lastLogin</td>
+			<td>permission</td>
 		  {users.map((data) => {
 		  return(
 			<div>

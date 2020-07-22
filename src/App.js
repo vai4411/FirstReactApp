@@ -172,7 +172,6 @@ class App extends Component{
         </div>
         <div>
         <div className='pricing-heading'>
-        <UsersList users={Users}/>
           <h4 id='pricing'>Pricing</h4>
           <div className='pricing-desc-div'>
           <p>
@@ -183,6 +182,7 @@ class App extends Component{
         <Plans plan={PlanTypes}/>
         </div>
         </div>
+        <UsersList users={Users}/>
         <div>
         <About about={AboutInfo}/>
         </div>
