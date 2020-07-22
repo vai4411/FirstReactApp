@@ -5,7 +5,7 @@ class Users extends React.Component {
 	render(){
 	const {users} = this.props;
 	  return (
-		<div>
+		<div className=''>
 			<td>name</td>
 			<td>email</td>
 			<td>status</td>
@@ -14,7 +14,7 @@ class Users extends React.Component {
 			<td>permission</td>
 		  {users.map((data) => {
 		  return(
-			<div>
+			<div className='table1'>
 				<tr>
 					<td>{data.name}</td>
 					<td>{data.email}</td>

@@ -221,3 +221,14 @@ li{
   color: grey;
   font-size: 0.9em;
 }
+
+.table1{
+  outline: thin solid lightgrey;
+}
+
+td,
+th {
+    font-family: sans-serif;
+    padding: 4px;
+    text-align: left;
+}
