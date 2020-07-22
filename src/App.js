@@ -3,6 +3,7 @@ import TopBar from './components/topBar.jsx';
 import Price from './components/price.jsx';
 import Plans from './components/plans.jsx';
 import About from './components/about.jsx';
+import UsersList from './components/userList.jsx'
 import './App.css';
 
 class App extends Component{
@@ -61,7 +62,93 @@ class App extends Component{
     {
       "heading":"Legal",
       "subHeading":["Privacy Policy","Terms of use"]
-    }]
+    }],
+
+    Users : [{
+      name: "abc",
+      email: "abc@gmail.com",
+      status: "Active",
+      role: "Administrator",
+      lastLogin: "2d ago",
+      permission: "Valid"
+  }, {
+      name: "def",
+      email: "def@gmail.com",
+      status: "Inactive",
+      role: "User",
+      lastLogin: "3d ago",
+      permission: "Valid"
+  }, {
+      name: "ghi",
+      email: "ghi@gmail.com",
+      status: "Active",
+      role: "Administrator",
+      lastLogin: "2d ago",
+      permission: "Valid"
+  }, {
+      name: "abc",
+      email: "abc@gmail.com",
+      status: "Inactive",
+      role: "User",
+      lastLogin: "3d ago",
+      permission: "Valid"
+  }, {
+      name: "def",
+      email: "def@gmail.com",
+      status: "Active",
+      role: "Administrator",
+      lastLogin: "2d ago",
+      permission: "Valid"
+  }, {
+      name: "ghi",
+      email: "ghi@gmail.com",
+      status: "Inactive",
+      role: "User",
+      lastLogin: "3d ago",
+      permission: "Valid"
+  }, {
+      name: "abc",
+      email: "abc@gmail.com",
+      status: "Active",
+      role: "Administrator",
+      lastLogin: "2d ago",
+      permission: "Valid"
+  }, {
+      name: "def",
+      email: "def@gmail.com",
+      status: "Inactive",
+      role: "User",
+      lastLogin: "3d ago",
+      permission: "Valid"
+  }, {
+      name: "ghi",
+      email: "ghi@gmail.com",
+      status: "Active",
+      role: "Administrator",
+      lastLogin: "2d ago",
+      permission: "Valid"
+  }, {
+      name: "abc",
+      email: "abc@gmail.com",
+      status: "Inactive",
+      role: "User",
+      lastLogin: "3d ago",
+      permission: "Valid"
+  }, {
+      name: "def",
+      email: "def@gmail.com",
+      status: "Inactive",
+      role: "User",
+      lastLogin: "3d ago",
+      permission: "Valid"
+  }, {
+      name: "ghi",
+      email: "ghi@gmail.com",
+      status: "Active",
+      role: "Administrator",
+      lastLogin: "2d ago",
+      permission: "Valid"
+  }]
   }
 }
 
@@ -72,6 +159,7 @@ class App extends Component{
     const {HeadersItems} = this.state;
     const {PricingDesc} = this.state;
     const {AboutInfo} = this.state;
+    const {Users} = this.state;
 
     return (
       <div>
@@ -82,6 +170,8 @@ class App extends Component{
             <button id='topbar-login-button'>USERS</button>
             </div>
         </div>
+        <div>
+        <UsersList users={Users}/>
         <div className='pricing-heading'>
           <h4 id='pricing'>Pricing</h4>
           <div className='pricing-desc-div'>
@@ -91,6 +181,7 @@ class App extends Component{
         </div>
         <div>
         <Plans plan={PlanTypes}/>
+        </div>
         </div>
         <div>
         <About about={AboutInfo}/>

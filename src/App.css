@@ -2,7 +2,7 @@
   background-color: #EEEEEE;
   height: 4vw;
   margin-top: -1.8vw;
-  position: absolute;
+  position: fixed;
   width: 99%;
   display: flex;
   flex-direction: row;
