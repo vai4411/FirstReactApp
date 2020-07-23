@@ -60,12 +60,18 @@ button#topbar-login-button:hover{
 }
 
 h4#pricing{
-  margin-top: -8%;
-  margin-left: 8%;
+  margin-top: 6%;
+  margin-left: 45%;
+  /* text-align: center; */
   font-size: 3.5vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
   Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: lighter;
+  /* text-align: center; */
+}
+
+.heading{
+  display: flex;
 }
 
 .price-desc{
@@ -222,6 +228,16 @@ li{
   font-size: 0.9em;
 }
 
+.user-table{
+  padding-top: 2%;
+  justify-content: space-around;
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+}
+
 .table1{
   outline: thin solid lightgrey;
 }
@@ -231,4 +247,36 @@ th {
     font-family: sans-serif;
     padding: 4px;
     text-align: left;
+}
+
+.table-row{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+td#table-status{
+  margin-left: 6%;
+}
+
+td#table-role{
+  margin-left: 2%;
+}
+
+td#table-login{
+  margin-left: 1%;
+}
+
+.header{
+  display: flex;
+}
+
+li#header-list{
+  margin-left: 30px;
+  color: black;
+}
+
+li#header-list:hover{
+  cursor: pointer;
+  color: #1976D2;
 }

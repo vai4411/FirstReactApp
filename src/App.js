@@ -4,7 +4,10 @@ import Price from './components/price.jsx';
 import Plans from './components/plans.jsx';
 import About from './components/about.jsx';
 import UsersList from './components/userList.jsx'
+import Header from './components/headerList.jsx';
+import Heading from './components/pricingHeading.jsx';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component{
 
@@ -68,7 +71,7 @@ class App extends Component{
       name: "abc",
       email: "abc@gmail.com",
       status: "Active",
-      role: "Administrator",
+      role: "Admin",
       lastLogin: "2d ago",
       permission: "Valid"
   }, {
@@ -82,7 +85,7 @@ class App extends Component{
       name: "ghi",
       email: "ghi@gmail.com",
       status: "Active",
-      role: "Administrator",
+      role: "Admin",
       lastLogin: "2d ago",
       permission: "Valid"
   }, {
@@ -96,7 +99,7 @@ class App extends Component{
       name: "def",
       email: "def@gmail.com",
       status: "Active",
-      role: "Administrator",
+      role: "Admin",
       lastLogin: "2d ago",
       permission: "Valid"
   }, {
@@ -110,7 +113,7 @@ class App extends Component{
       name: "abc",
       email: "abc@gmail.com",
       status: "Active",
-      role: "Administrator",
+      role: "Admin",
       lastLogin: "2d ago",
       permission: "Valid"
   }, {
@@ -124,7 +127,7 @@ class App extends Component{
       name: "ghi",
       email: "ghi@gmail.com",
       status: "Active",
-      role: "Administrator",
+      role: "Admin",
       lastLogin: "2d ago",
       permission: "Valid"
   }, {
@@ -145,7 +148,7 @@ class App extends Component{
       name: "ghi",
       email: "ghi@gmail.com",
       status: "Active",
-      role: "Administrator",
+      role: "Admin",
       lastLogin: "2d ago",
       permission: "Valid"
   }]
@@ -163,26 +166,36 @@ class App extends Component{
 
     return (
       <div>
+         <Router>
         <div className='app-header'>
           <p id='topbar-company-name'>CompanyName</p>
             <div className='topbar-options'>
-            <TopBar items={HeadersItems}/>
-            <button id='topbar-login-button'>USERS</button>
+            <Header />
+            <button id='topbar-login-button'>LOGIN</button>
             </div>
         </div>
-        <div>
-        <UsersList users={Users}/>
-        <div className='pricing-heading'>
-          <h4 id='pricing'>Pricing</h4>
-          <div className='pricing-desc-div'>
-          <p>
-          <Price desc={PricingDesc}/></p>
+          <div className='heading'>
+            <Route path='/features' component={Heading}/>
+        </div>
+          <div className='user-table'>
+          <Route path='/enterprise'
+              render={props => <UsersList users={Users}/>} />
+          </div>
+          <div>
+          <div className='pricing-heading'>
+            <div className='pricing-desc-div'>
+            <p>
+            <Route path='/features'
+              render={props => <Price desc={PricingDesc}/>} />
+            </p>
+            </div>
+          </div>
+          <div>
+          <Route path='/features'
+              render={props => <Plans plan={PlanTypes}/>} />
         </div>
         </div>
-        <div>
-        <Plans plan={PlanTypes}/>
-        </div>
-        </div>
+        </Router>
         <div>
         <About about={AboutInfo}/>
         </div>
