@@ -56,23 +56,23 @@ export default class UserForm extends React.Component {
     }
 
     render() {
-        return <div className='userForm'>
+        return <div className='user-form'>
             <div>
                 <form onSubmit={this.onFormSubmitted}>
                     <div>
-                        <label>Name</label>
+                        <label>Name:</label>
                         <input type="text" name="name" placeholder="Enter name"
                             value={this.state.name} onChange={this.onTextValueChange}
                         />
                     </div>
                     <div>
-                        <label>Email</label>
+                        <label>Email:</label>
                         <input type="email" name="email" placeholder="Enter email"
                             value={this.state.email} onChange={this.onTextValueChange}
                         />
                     </div>
                     <div>
-                        <label>Status</label>
+                        <label>Status:</label>
 						<select name="status" value={this.state.status} onChange={this.onTextValueChange}>
 							<option>pending</option>
 							<option>active</option>
@@ -80,7 +80,7 @@ export default class UserForm extends React.Component {
 						</select>
 						</div>
 						<div>
-						<label>Role</label>
+						<label>Role:</label>
 						<select name="role" value={this.state.role} onChange={this.onTextValueChange}>
 							<option>none</option>
 							<option>user</option>
@@ -88,20 +88,20 @@ export default class UserForm extends React.Component {
 						</select>
 						</div>
 						<div>
-						<label>Last login</label>
+						<label>Last login:</label>
                         <input type="login" name="login" placeholder="Enter last login"
                             value={this.state.login} onChange={this.onTextValueChange}
                         />
 						</div>
 						<div>
-						<label>Permission</label>
+						<label>Permission:</label>
 						<select name="permission" value={this.state.permission} onChange={this.onTextValueChange}>
 							<option>none</option>
 							<option>valid</option>
 							<option>invalid</option>
 						</select>
                     </div>
-                    <button type="submit">Save</button>
+                    <button className='save-button' type="submit">Save</button>
                 </form>
             </div>
         </div>
