@@ -3,9 +3,9 @@ import TopBar from './components/topBar.jsx';
 import Price from './components/price.jsx';
 import Plans from './components/plans.jsx';
 import About from './components/about.jsx';
-import UsersList from './components/userList.jsx'
 import Header from './components/headerList.jsx';
 import Heading from './components/pricingHeading.jsx';
+import Form from './components/list.jsx';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -65,93 +65,93 @@ class App extends Component{
     {
       "heading":"Legal",
       "subHeading":["Privacy Policy","Terms of use"]
-    }],
+    }]
 
-    Users : [{
-      name: "abc",
-      email: "abc@gmail.com",
-      status: "Active",
-      role: "Admin",
-      lastLogin: "2d ago",
-      permission: "Valid"
-  }, {
-      name: "def",
-      email: "def@gmail.com",
-      status: "Inactive",
-      role: "User",
-      lastLogin: "3d ago",
-      permission: "Valid"
-  }, {
-      name: "ghi",
-      email: "ghi@gmail.com",
-      status: "Active",
-      role: "Admin",
-      lastLogin: "2d ago",
-      permission: "Valid"
-  }, {
-      name: "abc",
-      email: "abc@gmail.com",
-      status: "Inactive",
-      role: "User",
-      lastLogin: "3d ago",
-      permission: "Valid"
-  }, {
-      name: "def",
-      email: "def@gmail.com",
-      status: "Active",
-      role: "Admin",
-      lastLogin: "2d ago",
-      permission: "Valid"
-  }, {
-      name: "ghi",
-      email: "ghi@gmail.com",
-      status: "Inactive",
-      role: "User",
-      lastLogin: "3d ago",
-      permission: "Valid"
-  }, {
-      name: "abc",
-      email: "abc@gmail.com",
-      status: "Active",
-      role: "Admin",
-      lastLogin: "2d ago",
-      permission: "Valid"
-  }, {
-      name: "def",
-      email: "def@gmail.com",
-      status: "Inactive",
-      role: "User",
-      lastLogin: "3d ago",
-      permission: "Valid"
-  }, {
-      name: "ghi",
-      email: "ghi@gmail.com",
-      status: "Active",
-      role: "Admin",
-      lastLogin: "2d ago",
-      permission: "Valid"
-  }, {
-      name: "abc",
-      email: "abc@gmail.com",
-      status: "Inactive",
-      role: "User",
-      lastLogin: "3d ago",
-      permission: "Valid"
-  }, {
-      name: "def",
-      email: "def@gmail.com",
-      status: "Inactive",
-      role: "User",
-      lastLogin: "3d ago",
-      permission: "Valid"
-  }, {
-      name: "ghi",
-      email: "ghi@gmail.com",
-      status: "Active",
-      role: "Admin",
-      lastLogin: "2d ago",
-      permission: "Valid"
-  }]
+  //   Users : [{
+  //     name: "abc",
+  //     email: "abc@gmail.com",
+  //     status: "Active",
+  //     role: "Admin",
+  //     lastLogin: "2d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "def",
+  //     email: "def@gmail.com",
+  //     status: "Inactive",
+  //     role: "User",
+  //     lastLogin: "3d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "ghi",
+  //     email: "ghi@gmail.com",
+  //     status: "Active",
+  //     role: "Admin",
+  //     lastLogin: "2d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "abc",
+  //     email: "abc@gmail.com",
+  //     status: "Inactive",
+  //     role: "User",
+  //     lastLogin: "3d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "def",
+  //     email: "def@gmail.com",
+  //     status: "Active",
+  //     role: "Admin",
+  //     lastLogin: "2d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "ghi",
+  //     email: "ghi@gmail.com",
+  //     status: "Inactive",
+  //     role: "User",
+  //     lastLogin: "3d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "abc",
+  //     email: "abc@gmail.com",
+  //     status: "Active",
+  //     role: "Admin",
+  //     lastLogin: "2d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "def",
+  //     email: "def@gmail.com",
+  //     status: "Inactive",
+  //     role: "User",
+  //     lastLogin: "3d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "ghi",
+  //     email: "ghi@gmail.com",
+  //     status: "Active",
+  //     role: "Admin",
+  //     lastLogin: "2d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "abc",
+  //     email: "abc@gmail.com",
+  //     status: "Inactive",
+  //     role: "User",
+  //     lastLogin: "3d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "def",
+  //     email: "def@gmail.com",
+  //     status: "Inactive",
+  //     role: "User",
+  //     lastLogin: "3d ago",
+  //     permission: "Valid"
+  // }, {
+  //     name: "ghi",
+  //     email: "ghi@gmail.com",
+  //     status: "Active",
+  //     role: "Admin",
+  //     lastLogin: "2d ago",
+  //     permission: "Valid"
+  // }]
   }
 }
 
@@ -179,7 +179,7 @@ class App extends Component{
         </div>
           <div className='user-table'>
           <Route path='/enterprise'
-              render={props => <UsersList users={Users}/>} />
+              render={props => <Form users={Users}/>} />
           </div>
           <div>
           <div className='pricing-heading'>
